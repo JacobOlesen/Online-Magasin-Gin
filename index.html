@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Ginialt</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Roboto+Slab&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+
+        <a href="index.html"> <div class="logo">
+            <div>
+                <img src="images/kindpng_1488986.png" alt="flasker">
+            </div>
+            <div>
+                <h1>GINIALT</h1>
+            </div>
+            <div>
+                <img src="images/kindpng_1488986.png" alt="flasker">
+            </div>
+
+            </div>
+        </a>
+        <nav>
+            <a href="index.html">Nyheder</a>
+            <a href="index.html">Ugens Gin</a>
+            <a href="index.html">Drinks & Cocktails</a>
+            <a href="index.html">Studierabat</a>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <div class="slideshow-container">
+        
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 3</div>
+              <img class="slide" src="images/eskerhøjkant.jpg" alt="Esker Gin" style="width:100%">
+              <div class="text">Efterår i selskab med gin</div>
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 3</div>
+              <img class="slide" src="images/stockholms.jpg" alt="Stockholm Gin" style="width:100%">
+              <div class="text">Efterår i selskab med gin</div>
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 3</div>
+              <img class="slide" src="images/gordons.jpg" alt="Gordons Gin" style="width:100%">
+              <div class="text">Efterår i selskab med gin</div>
+            </div>
+            
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+            
+            <div style="text-align:center">
+              <span class="dot" onclick="currentSlide(1)"></span> 
+              <span class="dot" onclick="currentSlide(2)"></span> 
+              <span class="dot" onclick="currentSlide(3)"></span> 
+            </div>
+    
+            <script>
+                let slideIndex = 0;
+                showSlides();
+    
+                function plusSlides(n) {
+                showSlides(slideIndex += n);
+                }
+    
+                function currentSlide(n) {
+                showSlides(slideIndex = n);
+                }
+    
+                function showSlides(n) {
+                  let i;
+                  let slides = document.getElementsByClassName("mySlides");
+                  let dots = document.getElementsByClassName("dot");
+                  for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";  
+                  }
+                  slideIndex++;
+                  if (slideIndex > slides.length) {slideIndex = 1}    
+                  for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                  }
+                  slides[slideIndex-1].style.display = "block";  
+                  dots[slideIndex-1].className += " active";
+                  setTimeout(showSlides, 7000); // Change image every 7 seconds
+                }
+            </script>
+        </div>
+
+        <div class="podium">
+            <img src="images/podium.jpg" alt="Podium" width="1050" height="500">
+        </div>
+
+        <section class="cardscontainer3"> 
+            <div>
+                <a href="artikel1.html"> <img src="images/artikel1.jpg" alt="Lind & Lime gin"></a>
+                <h1>Himmelske smagsoplevelser i øjenhøjde</h1>
+            </div>
+            <div>
+                <a href="artikel2.html"> <img src="images/artikel2.jpg" alt="Gin med spørgsmålstegn"></a>
+                <h1>Det bedste af det billigste</h1>
+            </div>
+            <div>
+                <a href="artikel3.html"> <img src="images/ginventory.jpg" alt="ginventory"></a>
+                <h1>Dit eget online barskab</h1>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="some">
+            <div class="sometext">
+                <div>
+                    <u>Følg os på Instagram</u>
+                </div>
+                <div>
+                    <u>Følg os på Facebook</u>
+                </div>
+             </div>
+            <div class="somelogo">
+                <div>
+                    <img src="images/instagram.png" alt="Instagram logo">
+                </div>
+                <div>
+                    <img src="images/facebook.png" alt="Facebook logo">
+                </div>
+            </div>
+        </div>
+
+        <div class="instafeed">
+            <div>
+                <img src="images/instafeed2.jpg" alt="Gin">
+                <img src="images/instafeed1.jpg" alt="Gin">
+                <img src="images/instafeed3.jpg" alt="Gin">
+                <img src="images/instafeed4.jpg" alt="Kirketårn">
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>

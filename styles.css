@@ -1,0 +1,511 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    text-decoration: none;
+}
+
+/* HEADER: */
+header{
+    width:100%;
+    height:140px;
+    align-items:center;
+    justify-content: center;
+    padding-left:5%;
+    padding-right:5%;
+    min-width:1100px;
+    border-bottom:3px solid #74522a;
+    z-index: 1000;
+    padding-top: 10px;
+    
+    /*Position fixed: */
+    position:fixed;
+    top:0px;
+    background-color: #BD3B1F;
+}
+
+/* Logoet: */
+.logo{
+display: flex;
+justify-content: center;
+text-decoration: none;
+}
+.logo h1{
+    font-family: 'Fredericka the Great';
+    font-size: 40pt;
+    margin-right: 10px;
+    color: black;
+    margin-top: 15px;
+}
+
+.logo img{
+    width: 100px;
+}
+header nav{
+    text-align: center;
+    font-family: 'Fredericka the Great';
+    text-transform: uppercase;
+}
+
+header nav a{
+    padding-left: 20px;
+    padding-right: 20px;
+    text-decoration: none;
+    color: #F5E9CD;
+    letter-spacing: 2px;
+}
+
+nav a:hover{
+    background-color: #F5E9CD;
+    color: #BD3B1F;
+    border-radius: 5px;
+}
+
+header img{
+    height: 90%;
+}
+
+main{
+    border-left:3px solid #74522a;
+    border-right:3px solid #74522a;
+    padding-left: 3px;
+    padding-right: 3px;
+    background-color: #F5E9CD;
+}
+
+
+
+/*SLIDESHOW*/
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+
+.slide {
+    height: 500px;
+    width: auto;
+    object-fit: cover;
+    filter: brightness(70%);
+    margin-top: 20px;
+}
+
+/* Slideshow container */
+.slideshow-container {  
+  position: relative;
+  padding-top: 130px;
+  width: 70%;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: 20px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: white;
+  font-size: 50px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 50%;
+  margin-top: 10px;
+  width: 100%;
+  text-align: center;
+  font-family: 'Fredericka the Great';
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0%;
+  font-family: 'Libre Baskerville', serif;
+  font-style: italic;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 3px;
+  background-color: #bbb;
+  border-radius: 50%;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+
+
+
+/* Ugens Top 3 */
+.podium{
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: -10px;
+}
+
+
+
+
+ /* Cardscontainer med 3 felter */
+ .cardscontainer3 {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #E2B147;
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 10px;
+}
+
+
+.cardscontainer3 div {
+    width: 250px;
+    height: 350px;
+    text-align: center;
+    background-color: #F5E9CD;
+}
+
+.cardscontainer3 div h1 {
+    font-family: 'Fredericka the Great';
+    height: 120px;
+    color: black;
+}
+
+.cardscontainer3 img {
+    width: 250px;
+    height: 250px;
+}
+
+
+
+
+
+/* Artikel "himmelske smagsoplevelser i øjenhøjde" */
+
+body main section img{
+    width: 70%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.artikel1 h1{
+    text-align: center;
+    padding: 20px;
+    font-family: 'Fredericka the Great';
+    margin-top: 120px;
+}
+
+.underoverskrift{
+    text-align: center;
+    margin: auto;
+    width: 50%;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    padding: 10px;
+}
+
+/* Two socks artikel */
+
+.twosocks{
+    display: flex;
+    margin-left: 15%;
+    margin-right: 15%;
+    padding-top: 10px;
+    background-color: #E2B147;
+    margin-top: 10px;
+}
+
+.twosocks h2{
+    text-align: center;
+    padding-top: 20px;
+    font-family: 'Fredericka the Great';
+}
+.twosocks h3{
+    text-align: left;
+    margin-left: 10%;
+    margin-top: 5%;
+    font-family: 'Fredericka the Great';
+}
+.twosocks h4{
+    text-align: left;
+    margin-left: 10%;
+}
+
+.twosocks p{
+    text-align: left;
+    margin-left: 10%;
+    margin-top: 5%;
+    width: 80%;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+.twosocks iframe{
+    padding: 20px;
+}
+
+
+/* Force Majeure artikel */
+
+.forcemajeure{
+    display: flex;
+    justify-content: center;
+    margin-left: 15%;
+    margin-right: 15%;
+    background-color: #E2B147;
+    margin-top: 10px;
+    padding-bottom: 2%;
+}
+
+.forcemajeure h2{
+    text-align: center;
+    padding-top: 20px;
+    font-family: 'Fredericka the Great', cursive;
+}
+.forcemajeure h3{
+    text-align: left;
+    margin-left: 10%;
+    margin-top: 5%;
+    font-family: 'Fredericka the Great', cursive;
+}
+.forcemajeure h4{
+    text-align: left;
+    margin-left: 10%;
+}
+
+.forcemajeure p{
+    text-align: left;
+    margin-left: 10%;
+    margin-top: 5%;
+    width: 80%;
+}
+
+.forcemajeure iframe{
+    padding: 20px;
+}
+
+
+
+/* Artikel 2 "Det bedste af det billigste" */
+
+.artikel2{
+    background-color: #E2B147;
+    margin-left: 15%;
+    margin-right: 15%;
+    padding-bottom: 10px;
+}
+
+.artikel2top h1{
+    text-align: center;
+    padding: 20px;
+    font-family: 'Fredericka the Great';
+    margin-top: 120px;
+}
+
+.artikel2top img{
+    margin-bottom: 10px;
+}
+
+.artikel2 h2{
+    margin-left: 15%;
+    margin-right: 15%;
+    padding-top: 10px;
+    font-family: 'Fredericka the Great';
+    margin-top: 10px;
+}
+
+.artikel2 p{
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 10px;
+    padding-bottom: 2%;
+}
+
+ .artikelbox {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 10px;
+    background-color: #F5E9CD;
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.artikelbox div {
+    width: 350px;
+    height: 570px;
+    text-align: center;
+    background-color: #F5E9CD;
+}
+
+.artikelbox img {
+    width: 350px;
+    height: 500px;
+}
+
+.artikelbox h2{
+    padding-top: 5%;
+    font-family: 'Fredericka the Great';
+}
+
+
+
+ 
+/* Cardscontainer med 3 felter - Artikel 3 */
+
+.artikel3top h1{
+    text-align: center;
+    padding: 20px;
+    font-family: 'Fredericka the Great';
+    margin-top: 120px;
+}
+
+ .cardscontainerartikel3 {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #c58a3b;
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 10px;
+}
+
+.cardscontainerartikel3 div {
+    width: 250px;
+    height: 520px;
+    text-align: center;
+    background-color: #F5E9CD;
+}
+
+.cardscontainerartikel3 div h1 {
+    font-family: 'Fredericka the Great';
+    height: 120px;
+    padding-top: 10px;
+}
+
+.cardscontainerartikel3 img {
+    width: 250px;
+    height: 450px;
+}
+
+ul{
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+
+
+/* Footer */
+
+footer{
+    display: flex;
+    border-top:3px solid #74522a;
+    height: 200px;
+    padding-top: 10px;
+    background-color: #BD3B1F;
+    padding-left: 15%;
+    padding-right: 15%;
+    width: 100%;
+}
+
+.some{
+    display: flex;
+    padding-top: 10px;
+    width: 50%;
+    padding-left: 140px;
+}
+
+.sometext u{
+    font-family: 'Fredericka the Great', cursive;
+    font-size: 18pt;
+    color: black;
+}
+
+footer u:hover{
+    background-color: #F5E9CD;
+    color: #BD3B1F;
+    border-radius: 5px;
+    padding: 1px;
+}
+
+.sometext div{
+    padding-top: 30px;
+}
+
+.somelogo img{
+    margin-top: 10px;
+    width: 40px;
+    height: 40px;
+}
+
+.somelogo div{
+    padding-left: 25px;
+    padding-top: 13px;
+}
+
+.instafeed{
+    width: 50%;
+    justify-content: center;
+    padding-left: 5%;
+    padding-top: 13px;
+}
+
+.instafeed img{
+    width: 100px;
+    height: 150px;
+    border-radius: 10px;
+    justify-content: right;
+
+
+}
